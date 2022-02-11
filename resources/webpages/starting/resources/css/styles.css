@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    background-color: white;
+    /* text-align: center; */
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    background-color: #272A64;
+    display: inline-flex;
+    justify-content: flex-end;
+    position: fixed;
+    height: 1.75rem;
+    z-index: 5000;
+}
+
+nav ul {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    color: white;
+    font-size: 1.2rem;
+    padding: .1875rem 1.25rem;
+}
+
+/* #E4B85A yellow */
+/* #E93D33 red */
+/* #272A64 blue */
+
+main {
+    position: relative;
+    top: 28px;
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* TITLE SECTION */
+
+
+.title {
+    width: 100%;
+    height: 82vh;
+    box-sizing: content-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem 0;
+    border-bottom: 1.875rem solid #E93D33 ;
+}
+
+.title h1 {
+    font-size: 4rem;
+    margin-right: 3.75rem;
+    text-align: center;
+}
+
+.title img {
+    max-width: 40%;
+}
+
+@media only screen and (max-width:800px) {
+    .title {
+        flex-direction: column;
+        padding: 1rem auto;
+    }
+    
+    .title img {
+        max-width: 70%;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .title img {
+        max-width: 90%;
+    }
+}
+/* EVENTS SECTION */
+
+.events {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    /* margin-bottom: 2rem; */
+    border-bottom: 1.875rem solid #E93D33 ;
+    padding-bottom: 1.875rem;
+}
+
+.events h2 {
+    font-size: 3rem;
+    /* margin-right: 60px; */
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 1.875rem auto;
+}
+
+.events_container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+table, tr, thead, th, td {
+    border: 1px solid #272A64;
+    border-collapse: collapse;
+    padding: .375rem;
+}
+.events img {
+    max-width: 40%;
+}
+
+table {
+    max-width: 60%;
+    max-height: 60%;
+    /* margin: 2rem; */
+    padding: 5px;
+    margin-right: 2rem;
+}
+
+th, td {
+    font-size: 1.5rem;
+}
+
+thead {
+    background-color: #272A64;
+    color: white;
+}
+
+@media only screen and (max-width: 940px) {
+    .events_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    table {
+        margin-bottom: 1.875rem;
+        margin-right: 0;
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .events img {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    th, td {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    
+    table {
+        max-width: 95%;
+    }
+    
+    .events img {
+        max-width: 95%;
+    }
+}
+
+/* MEMBERSHIP SECTION */
+
+
+.membership {
+    display: block;
+    width: 100%;
+    border-bottom: 1.875rem solid #E93D33 ;
+    padding-bottom: 1.875rem;
+}
+
+.membership h2 {
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 1.875rem auto;
+}
+
+.membership p {
+    text-align: center;
+    max-width: 70%;
+    margin: 30px auto;
+    font-size: 1.25rem;
+}
+
+.membership div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.membership img {
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .membership p {
+        max-width: 95%;
+    }
+    
+    .membership img {
+        max-width: 95%;
+    }
+}
+
+/* GALLERY SECTION */
+
+.gallery {
+    padding: 1.875rem 0;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center     ;
+    flex-wrap: wrap;
+    align-content: center;
+    border-bottom: 1.875rem solid #E93D33 ;
+
+}
+
+.gallery img {
+    max-height: 15rem;
+    margin: 1rem;
+    /* flex-shrink: 1; */
+}
