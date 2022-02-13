@@ -7,13 +7,13 @@ let toggleLabel = document.querySelector("#toggle-label");
 
 
 checkBox.addEventListener("click", function() {
-    if (theme.getAttribute("href") === "./resources/css/light-theme_about.css") {
-        theme.href = "./resources/css/dark-theme_about.css";
-        githubImg.src = "./resources/images/GitHub_Logo_White.png";
+    if (theme.getAttribute("href") === "../css/light-theme_about.css") {
+        theme.href = "../css/dark-theme_about.css";
+        githubImg.src = "../images/GitHub_Logo_White.png";
         toggleLabel.textContent = "Light Mode:";
     } else {
-        theme.href = "./resources/css/light-theme_about.css";
-        githubImg.src = "./resources/images/GitHub_Logo.png";
+        theme.href = "../css/light-theme_about.css";
+        githubImg.src = "../images/GitHub_Logo.png";
         toggleLabel.textContent = "Dark Mode:";
 
     }
