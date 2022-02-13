@@ -9,8 +9,6 @@ html {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-color: black;
-    color: white;
 }
 
 @media only screen and (max-width: 690px) {
@@ -31,14 +29,14 @@ header {
 
 a:link,
 a:visited {
-    color: lightblue;
+    color: blue;
 }
 
 .nav-container {
     width: 100%;
     display: flex;
     position: fixed;
-    background-color: black;
+    background-color: white;
     z-index: 1000;
 }
 
@@ -58,11 +56,11 @@ a:visited {
 
 .initials a:link {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .initials a:visited {
-    color: white;
+    color: black;
 }
 
 nav {
@@ -88,7 +86,7 @@ nav ul li {
 nav ul li a:link,
 nav ul li a:visited {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav ul li a:hover {
@@ -128,10 +126,10 @@ nav ul li a:hover {
         font-weight: 600;
         width: 100%;
         text-align: center;
-        border-top: 1px solid white;
+        border-top: 1px solid black;
     }
     nav ul li:last-of-type {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid black;
     }
 }
 
@@ -227,12 +225,10 @@ input:checked+.slider:before {
 
 .slider.round {
     border-radius: 25px;
-    background-color: black;
 }
 
 .slider.round:before {
     border-radius: 50%;
-    background-color: black;
 }
 
 
@@ -265,14 +261,14 @@ main {
     flex-flow: column nowrap;
     width: 100%;
     align-items: center;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
+    padding: 30px 0;
 }
 
 .main_header {
     display: inline-flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    margin-top: 30px;
     text-align: center;
     width: 80%;
 }
@@ -280,7 +276,7 @@ main {
 .main_header h1 {
     font-size: 2.5rem;
     padding-bottom: 1.25rem;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     margin-bottom: 20px;
 }
 
@@ -293,15 +289,29 @@ main {
     width: 100%;
     margin: 0 auto;
     text-align: justify;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .main_opener p {
     line-height: 1.5;
     font-size: 1.2rem;
     padding-bottom: 20px;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     padding: 20px;
     font-weight: 400;
+}
+
+.main_opener img {
+    min-width: 200px;
+    max-width: 50%;
+    margin: 30px auto 10px auto;
+}
+
+.main-opener figcaption {
+    text-align: center;
+    font-weight: bold;
 }
 
 
@@ -312,7 +322,7 @@ main {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
 }
 
 .projects_header h2 {
@@ -325,7 +335,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
     padding: 0 5px;
 }
 
@@ -360,7 +370,7 @@ main {
     max-width: 100%;
     min-width: 150px;
     border-radius: 5%;
-    border: 2px solid white;
+    border: 2px solid black;
     ;
 }
 
@@ -469,7 +479,7 @@ footer {
     height: 200px;
     content: "";
     margin-top: 35px;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
     position: relative;
     top: 37px;
 }

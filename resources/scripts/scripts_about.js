@@ -1,17 +1,18 @@
-let checkBox = document.querySelector("#toggle");
+let checkBox = document.querySelector("#toggle")
 
-let theme = document.querySelector("#theme-link");
+let theme = document.querySelector("#theme-link")
 let githubImg = document.querySelector("#githubImg");
 let toggleLabel = document.querySelector("#toggle-label");
 
 
+
 checkBox.addEventListener("click", function() {
-    if (theme.getAttribute("href") === "./resources/css/light-theme.css") {
-        theme.href = "./resources/css/dark-theme.css";
+    if (theme.getAttribute("href") === "./resources/css/light-theme_about.css") {
+        theme.href = "./resources/css/dark-theme_about.css";
         githubImg.src = "./resources/images/GitHub_Logo_White.png";
         toggleLabel.textContent = "Light Mode:";
     } else {
-        theme.href = "./resources/css/light-theme.css";
+        theme.href = "./resources/css/light-theme_about.css";
         githubImg.src = "./resources/images/GitHub_Logo.png";
         toggleLabel.textContent = "Dark Mode:";
 

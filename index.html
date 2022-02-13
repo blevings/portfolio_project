@@ -13,14 +13,21 @@
     <header>
         <div class="nav-container">
             <div class="initials">
-                <p>Brian Levings</p>
+                <p>
+                    <!-- <span style="color: red;">B</span>
+                    <span style="color: orange;">r</span>
+                    <span style="color: yellow;">i</span>
+                    <span style="color: green;">a</span>
+                    <span style="color: blue;">n </span>
+                    <span>Levings</span> -->
+                    <a href="./index.html"> Brian Levings</a>
+                </p>
             </div>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Portfolio</li>
-                    <li>GitHub</li>
-                    <li>Mystery</li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li>Resume</li>
                 </ul>
             </nav>
         </div>
@@ -34,6 +41,8 @@
     </header>
     <main>
         <section class="main_column">
+
+            <!-- _______MAIN INTRO_______ -->
             <div class="main_header">
                 <h1>Exploring Programming through Codecademy</h1>
                 <!-- <h2>Welcome to my sandbox!</h2> -->
@@ -49,7 +58,8 @@
                     me on <a href="https://www.linkedin.com/in/richard-brian-levings" target="_blank">LinkedIn</a>.
                 </p>
             </div>
-            <div class="projects_header">
+            <!-- _______PROJECTS_______ -->
+            <div class="projects_header" id="portfolio">
                 <h2>Projects</h2>
             </div>
             <div class="projects_container">
@@ -73,13 +83,14 @@
                 </div>
                 <div class="project">
                     <h3>Tea Cozy</h3>
-                    <h4>Codecademy Design Project</h4>
+                    <h4>Codecademy Design Spec Project</h4>
                     <p>This was the first responsive web design project. A design spec and assets were provided but I was required to build it from scratch.</p>
                     <a href="./resources/webpages/tea_cozy/index.html"><img src="./resources/images/tea_cozy.png" alt=""></a>
                 </div>
             </div>
 
         </section>
+        <!-- _______SIDEBAR_______ -->
         <section class="sidebar">
             <div class="sidebar-container">
                 <div class="img_container">
@@ -89,9 +100,14 @@
                     <h2>Brian Levings</h2>
                     <h3>Product Manager <br> @ Kimray</h3>
                     <p>Currently learning web development through Codecademy's Full-Stack Engineer career path</p>
-                    <figure>
-                        <a href="https://www.linkedin.com/in/richard-brian-levings" target="_blank"><img src="./resources/images/LI-Logo.png" alt="LinkedIn Logo"></a>
-                    </figure>
+                    <div class="logo_container">
+                        <figure>
+                            <a href="https://www.linkedin.com/in/richard-brian-levings" target="_blank"><img src="./resources/images/LI-Logo.png" alt="LinkedIn Logo"></a>
+                        </figure>
+                        <figure>
+                            <a href="https://github.com/blevings" target="_blank"><img src="./resources/images/GitHub_Logo.png" alt="" id="githubImg"></a>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
